@@ -1,7 +1,6 @@
 body,
 html {
 	background: url('./brown-wooden-flooring.jpg');
-	background-size: cover;
 	background-repeat: repeat;
 	margin: 0;
 	padding: 0;
@@ -37,7 +36,7 @@ html {
 	grid-template-areas: "title title" "image text";
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
 	.download-container {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto 1fr auto;
@@ -67,7 +66,7 @@ html {
 	grid-template-areas: "title title" "image text";
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
 	.explication-container {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto 1fr auto;
@@ -108,7 +107,7 @@ html {
 	margin-top: 2rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
 	.faq-questions-container {
 		grid-template-columns: 1fr;
 		padding: 2rem;
