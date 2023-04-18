@@ -6,19 +6,143 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Hello Bulma!</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" href="./styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<section class="section">
+	<div id="parchment"></div>
+	<section class="section is-large">
 		<div class="container">
-			<h1 class="title">
+			<h1 class="title pirate-title">
 				Hello World
 			</h1>
-			<p class="subtitle">
-				My first website with <strong>Bulma</strong>!
-			</p>
 		</div>
 	</section>
+	<!-- add separating line -->
+
+	<section class="section">
+		<div class="container explication-container">
+			<div class="explication-title">
+				<h1 class="title pirate-title">
+					C'est quoi Anarchipel ?
+				</h1>
+			</div>
+			<div class="explication-image">
+				image
+			</div>
+			<div class="explication-text">
+				Anarchipel est un jeu de stratégie, de bluff et de chance pour six joueurs. Votre
+				mission, en tant que corsare, est de mener à bien plusieurs expéditions commerciales
+				tout en prenant garde aux pirates qui se cachent parmi vous et veulent vous faire
+				échouer ! Les pirates sont infiltrés parmi les joueurs et ils peuvent impacter les
+				probabilités de réussite des objectifs tout en essayant de ne pas se faire remarquer.
+				<br /><br />
+				Le jeu se déroule en trois manches et après chaque manche, un joueur est éliminé par un
+				vote commun. Le joueur éliminé devient un fantôme et peut encore influencer le jeu avec
+				des cartes d'action. Les corsaires doivent remplir tous les objectifs au cours des
+				différents manches et les pirates doivent les en empêcher.
+				<br /><br />
+				Le nombre de coups étant limité, il est nécessaire de s'allier avec d'autres joueurs
+				pour augmenter les chances de succès. Attention à bien choisir vos ailiers…
+				<br /><br />
+				Embarquez dès maintenant dans une nouvelle aventure qui allie réflexion et persuasion en
+				téléchargeant le livret de règles et les ressources nécessaires.
+			</div>
+
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container download-container">
+			<div class="download-title">
+				<h1 class="title pirate-title">
+					Jouez le jeux graduit!
+				</h1>
+			</div>
+			<div class="download-text">
+				<div>
+					Pour jouer à Anarchipel, il suffit de télécharger les
+					différents assets, de les imprimer, d'un peu de découpage, et le tour est joué !
+				</div>
+				<div class="download-link-container">
+					<span class="is-underlined has-text-weight-bold is-size-5">Règles du jeu:</span>
+					<a class="button is-dark download-button" href="./SHS__Règles_Anarchipel.pdf"
+						download="SHS__Règles_Anarchipel.pdf">Règles.pdf</a>
+				</div>
+				<div class="download-link-container">
+					<span class="is-underlined has-text-weight-bold is-size-5">Imprimez et
+						jouez:</span>
+					<a class="button is-dark download-button" href="./SHS__Règles_Anarchipel.pdf"
+						download="SHS__Règles_Anarchipel.pdf">Imprimez&jouez.pdf</a>
+				</div>
+			</div>
+			<div class="download-image">image</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container download-container">
+			<div class="download-title">
+				<h1 class="title pirate-title">
+					Video d'explication
+				</h1>
+			</div>
+			<div>
+				video
+			</div>
+
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<div>
+				<h1 class="title pirate-title">
+					Questions fréquentes
+				</h1>
+			</div>
+			<div class="faq-questions-container">
+				<div>
+					<h3 class="title">Qui-sommes-nous ?</h3>
+					<p>Nous sommes des étudiants de <a href="https://www.epfl.ch/">l'École
+							Polytechnique
+							Fédérale de Lausanne
+						</a>qui ont
+						choisi de créer un jeu de société dans le cadre d'un cours de sciences
+						humaines
+						et sociales.</p>
+				</div>
+
+				<div>
+					<h3 class="title">Comment nous soutenir ?</h3>
+					<p>TODO</p>
+				</div>
+
+				<div>
+					<h3 class="title">Une version physique ?</h3>
+					<p>TODO</p>
+				</div>
+
+				<div>
+					<h3 class="title">Une version physique ?</h3>
+					<p>TODO</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
 </body>
+
+<svg>
+	<filter id="wavy2">
+		<feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1" />
+		<feDisplacementMap in="SourceGraphic" scale="20" />
+	</filter>
+</svg>
 
 </html>

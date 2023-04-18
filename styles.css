@@ -1,0 +1,117 @@
+body,
+html {
+	background: url('./brown-wooden-flooring.jpg');
+	background-size: cover;
+	background-repeat: repeat;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: auto;
+	color: rgb(19, 19, 19);
+	font-family: 'Josefin Sans', serif;
+	font-size: 13pt;
+}
+
+#parchment {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	right: 1rem;
+	bottom: 1rem;
+	box-shadow: 2px 3px 20px rgb(0, 0, 0), 0 0 60px #8a4d0f inset;
+	background: #fffef0;
+	filter: url(#wavy2);
+	z-index: 0;
+}
+
+.pirate-title {
+	font-family: 'Pirata One', cursive;
+	font-size: 4rem;
+	text-align: center;
+}
+
+.download-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto 1fr;
+	grid-gap: 1rem;
+	grid-template-areas: "title title" "image text";
+}
+
+@media screen and (max-width: 600px) {
+	.download-container {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas: "title" "image" "text";
+		padding: 2rem;
+	}
+
+}
+
+.download-title {
+	grid-area: title;
+}
+
+.download-image {
+	grid-area: image;
+}
+
+.download-text {
+	grid-area: text;
+}
+
+.explication-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto 1fr;
+	grid-gap: 1rem;
+	grid-template-areas: "title title" "image text";
+}
+
+@media screen and (max-width: 600px) {
+	.explication-container {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas: "title" "text" "image";
+		padding: 2rem;
+	}
+
+}
+
+.explication-title {
+	grid-area: title;
+}
+
+.explication-image {
+	grid-area: image;
+}
+
+.explication-text {
+	grid-area: text;
+}
+
+.download-link-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+.download-button {
+	width: 200px;
+	font-weight: bold;
+}
+
+.faq-questions-container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+	.faq-questions-container {
+		grid-template-columns: 1fr;
+		padding: 2rem;
+	}
+}
