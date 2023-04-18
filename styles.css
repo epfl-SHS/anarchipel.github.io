@@ -14,13 +14,12 @@ html {
 
 #parchment {
 	position: absolute;
-	top: 1rem;
-	left: 1rem;
-	right: 1rem;
-	bottom: 1rem;
+	top: 1.5rem;
+	left: 1.5rem;
+	right: 1.5rem;
+	bottom: 1.5rem;
 	box-shadow: 2px 3px 20px rgb(0, 0, 0), 0 0 60px #8a4d0f inset;
-	background: #fffef0;
-	filter: url(#wavy2);
+	background: url('./paper_background.jpg');
 	z-index: 0;
 }
 
