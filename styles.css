@@ -22,6 +22,41 @@ html {
 	z-index: 0;
 }
 
+.title-container {
+	background-image: url('./title_image.jpeg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+	z-index: 1;
+	
+}
+
+.first-section {
+	padding-top: 4rem;
+}
+@media screen and (max-width: 1024px) {
+	.first-section {
+		padding-top: 0rem;
+	}
+}
+
+.title-title {
+	position: absolute;
+	top: 530px;
+	left: 100px;
+	color: #FFF
+}
+@media screen and (max-width: 1024px) {
+	.title-title {
+		position: absolute;
+		top: 300px;
+		left: 100px;
+		color: #FFF
+	}
+}
+
+
 .pirate-title {
 	font-family: 'Pirata One', cursive;
 	font-size: 4rem;
@@ -52,6 +87,12 @@ html {
 
 .download-image {
 	grid-area: image;
+	padding: 1rem;
+	padding-top: 0;
+}
+
+.download-image > img {
+	border-radius: 8px;
 }
 
 .download-text {
@@ -82,6 +123,7 @@ html {
 
 .explication-image {
 	grid-area: image;
+	padding: 1rem;
 }
 
 .explication-text {
